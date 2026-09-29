@@ -29,7 +29,7 @@ It is designed to serve as a robust transport layer (via **LoRaWAN & Rust**) for
 ## 🛠️ Planned Tech Stack
 
 *   **Programming Language:** Rust (for maximum stability, performance, and memory safety)
-*   **Hardware:** Raspberry Pi (a hybrid ecosystem of Pi Zero, Pico, and larger single-board instances)
+*   **Hardware:** Raspberry Pi (a hybrid ecosystem of Pi Pico, ESP32 and larger single-board instances)
 *   **Protocol:** LoRaWAN (low-power, long-range data transmission optimized for Martian topography)
 
 ---
