@@ -22,7 +22,7 @@
 
 **AuraNet** is the prototype of a purely **local mesh communication network**, specifically engineered for the unique environmental conditions and infrastructure demands of early Martian settlements. The system operates entirely independently of orbital satellites or any direct connection to Earth. 
 
-It is designed to serve as a robust transport layer (via **LoRaWAN & Rust**) for autonomous AI agents originating from the **AgentHub** project (built on OpenClaw). More information will be available later at [digitalcompass.site/auranet](https://digitalcompass.site).
+It is designed to serve as a robust transport layer (via **LoRaWAN & Rust**) for autonomous AI agents originating from the **AgentHub** project (built on OpenClaw). More information about AgentHub can be found at [digitalcompass.site/wp-agenthub](https://digitalcompass.site/wp-agenthub).
 
 ---
 
