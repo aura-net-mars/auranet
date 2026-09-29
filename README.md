@@ -1,51 +1,50 @@
-# AuraNet 🪐
+# AuraNet 🔴
 
 <p align="center">
   <img src="logo.png" alt="AuraNet Logo" width="300" />
 </p>
 
 <p align="center">
-  <strong>Ein autonomes, lokales Kommunikationsnetzwerk für die ersten Mars-Siedler.</strong><br />
-  Infrastruktur auf Basis von Rust, Raspberry Pi und LoRaWAN.
+  <strong>An autonomous, local communication network for the first Mars settlers.</strong><br />
+  Infrastructure powered by Rust, Raspberry Pi, and LoRaWAN.
 </p>
 
 ---
 
-## 🚧 Projekt-Status: Geplant / Work in Progress (WIP)
+## 🚧 Project Status: Planned / Work in Progress (WIP)
 
-> **HINWEIS:** 🚀 **AuraNet befindet sich aktuell in der Konzeptionsphase.** 
-> Die aktive Entwicklung startet im **November 2026** mit ersten Hardware-Prototypen (Raspberry Pi). Aktuell ruht das Projekt, da der Fokus auf hardwarenahen Grundlagen liegt.
-
----
-
-## 🛰️ Über AuraNet
-
-**AuraNet** ist der Prototyp eines rein **lokalen Mesh-Kommunikationsnetzwerks**, das speziell für die Infrastruktur der ersten Mars-Siedlungen entwickelt wird. Das System agiert völlig unabhängig von Orbital-Satelliten oder einer Erdanbindung. 
-
-Es soll als robuste Transportebene (via **LoRaWAN & Rust**) für autonome KI-Agenten aus dem **AgentHub**-Projekt (basiert auf OpenClaw) dienen. Mehr Infos folgen später unter [digitalcompass.site/auranet](https://digitalcompass.site).
+> **NOTE:** 🚀 **AuraNet is currently in the conceptual phase.** 
+> Active development is scheduled to kick off in **November 2026** with initial hardware prototypes (Raspberry Pi). The project is temporarily on hold while the current focus is dedicated to low-level hardware programming fundamentals.
 
 ---
 
-## 🛠️ Geplanter Tech Stack
+## 🛰️ About AuraNet
 
-*   **Programmiersprache:** Rust (für maximale Stabilität und Speichersicherheit)
-*   **Hardware:** Raspberry Pi (Mischung aus Pi Zero und größeren Instanzen)
-*   **Protokoll:** LoRaWAN (stromsparende Datenübertragung über weite Distanzen)
+**AuraNet** is the prototype of a purely **local mesh communication network**, specifically engineered for the unique environmental conditions and infrastructure demands of early Martian settlements. The system operates entirely independently of orbital satellites or any direct connection to Earth. 
+
+It is designed to serve as a robust transport layer (via **LoRaWAN & Rust**) for autonomous AI agents originating from the **AgentHub** project (built on OpenClaw). More information will be available later at [digitalcompass.site/auranet](https://digitalcompass.site).
 
 ---
 
-## 🗺️ Erste Meilensteine (Ab Nov 2026)
+## 🛠️ Planned Tech Stack
 
-- [x] **Konzept & Branding:** Star-Trek-inspiriertes Logo entworfen, technischer Rahmen gesteckt.
-- [ ] **Phase 1 (Nov 2026):** Erste "Baby Steps" in Rust auf dem Raspberry Pi (Lokaler P2P-Ping via LoRa).
-- [ ] **Phase 2 (Jan 2027):** Aufbau der Projektseite auf `digitalcompass.site/auranet` inklusive des "Founder Merch Patch" (8cm gewebter Klett-Aufnäher mit Silberfaden zur Refinanzierung der Test-Hardware).
+*   **Programming Language:** Rust (for maximum stability, performance, and memory safety)
+*   **Hardware:** Raspberry Pi (a hybrid ecosystem of Pi Zero, Pico, and larger single-board instances)
+*   **Protocol:** LoRaWAN (low-power, long-range data transmission optimized for Martian topography)
+
+---
+
+## 🗺️ Initial Milestones (Starting Nov 2026)
+
+- [x] **Branding & Concept:** Star Trek-inspired logo designed, technical framework established.
+- [ ] **Phase 1 (Nov 2026):** "Baby Steps" in Rust on Raspberry Pi hardware (Local P2P ping tests via LoRa).
+- [ ] **Phase 2 (Jan 2027):** Launch of the project subpage at `digitalcompass.site/auranet`, introducing the "Founder Merch Patch" (8cm woven Velcro patch with silver metallic threads to crowd-fund community test hardware).
 
 ---
 <p align="center">
-  <em>AuraNet — Mars Local Network • Erbaut für die Zukunft der interplanetaren Kolonisation.</em>
+  <em>AuraNet — Mars Local Network • Built for the future of interplanetary colonization.</em>
 </p>
 
 ## 📄 Lizenz
 
-Dieses Projekt ist unter der **Apache License 2.0** lizenziert – siehe die [LICENSE](LICENSE)-Datei für Details. Der Code ist frei verfügbar, bietet jedoch zusätzlichen Schutz vor Patentansprüchen für alle Beteiligten.
-
+This project is licensed under **Apache License 2.0**  – more under [LICENSE](LICENSE)-Doc for Details. 
