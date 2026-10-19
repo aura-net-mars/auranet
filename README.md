@@ -14,7 +14,7 @@
 ## 🚧 Project Status: Planned / Work in Progress (WIP)
 
 > **NOTE:** 🚀 **AuraNet is currently in the conceptual phase.** 
-> Active development is scheduled to kick off in **November 2026** with initial hardware prototypes (Raspberry Pi). The project is temporarily on hold while the current focus is dedicated to low-level hardware programming fundamentals.
+> Active development is scheduled to kick off in **November 2026** with initial hardware prototypes (Raspberry Pi and ESP32). The project is temporarily on hold while the current focus is dedicated to low-level hardware programming fundamentals.
 
 ---
 
