@@ -38,7 +38,7 @@ It is designed to serve as a robust transport layer (via **LoRaWAN & Rust**) for
 
 - [x] **Branding & Concept:** Star Trek-inspired logo designed, technical framework established.
 - [ ] **Phase 1 (Nov 2026):** "Baby Steps" in Rust on Raspberry Pi hardware (Local P2P ping tests via LoRa).
-- [ ] **Phase 2 (Jan 2027):** Launch of the project subpage at `digitalcompass.site/auranet`, introducing the "Founder Merch Patch" (8cm woven Velcro patch with silver metallic threads to crowd-fund community test hardware).
+- [ ] **Phase 2 (Jan 2027):** Launch of the project on my homepage, introducing the "Founder Merch Patch" (8cm woven Velcro patch with silver metallic threads to crowd-fund community test hardware).
 
 ---
 <p align="center">
