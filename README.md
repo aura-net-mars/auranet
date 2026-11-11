@@ -37,8 +37,9 @@ It is designed to serve as a robust transport layer (via **LoRaWAN & Rust**) for
 ## 🗺️ Initial Milestones (Starting Nov 2026)
 
 - [x] **Branding & Concept:** Star Trek-inspired logo designed, technical framework established.
-- [ ] **Phase 1 (Nov 2026):** "Baby Steps" in Rust on Raspberry Pi hardware (Local P2P ping tests via LoRa).
-- [ ] **Phase 2 (June 2027):** Launch of the project on my homepage, introducing the "Founder Merch Patch" (8cm woven Velcro patch with silver metallic threads to crowd-fund community test hardware).
+- [x] **Phase 1 (Nov 2026):** "Baby Steps" in Rust on Raspberry Pi & ESP32 hardware
+- [ ] **Phase 2 (Feb 2027):** Local P2P ping tests via LoRa
+- [ ] **Phase 3 (Aug 2027):** Launch of the project on my homepage, introducing the "Founder Merch Patch" (8cm woven Velcro patch with silver metallic threads to crowd-fund community test hardware).
 
 ---
 <p align="center">
