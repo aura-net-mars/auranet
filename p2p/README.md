@@ -28,7 +28,7 @@ Because the underlying Rust mesh protocol (`auranet-proto`) is lightweight, hard
 
 #### 🎨 Culture, Community, Sports & "Quiet Tech"
 * **Interactive Geocaching & Urban Scavenger Hunts:** Location-aware storytelling and outdoor treasure hunts where hidden solar relays act as autonomous caches—automatically unlocking new riddles or clues on a player's E-Paper display based on proximity (`RSSI`) and logging visits via two-way `ACK`.
-* **Trail Checkpoints & Endurance Sports (e.g., Swedish Trekking Routes):** Rugged, off-grid checkpoint beacons along remote hiking trails, orienteering courses, or ultramarathons—allowing hikers and runners to log pass-throughs, receive weather or route alerts, and trigger emergency pings without cellular coverage.
+* **Trail Checkpoints, Solo-Hiker Safety & Endurance Sports (e.g., Swedish Trekking Routes):** Rugged, off-grid checkpoint beacons along remote hiking trails, orienteering courses, or ultramarathons—allowing hikers and runners to log pass-throughs, receive weather or route alerts, and automatically trigger overdue safety alerts along the mesh if a solo hiker fails to check in at the next beacon within an expected time window.
 * **Hyper-Local Kiez Bulletin Boards:** A distraction-free, zero-tracking community network for sharing tools, surplus food, or local meetups within a neighborhood block.
 * **Sustainable, Repairable Venue Pagers:** A long-lasting, open-source alternative to disposable restaurant or foodtruck buzzers—featuring readable E-Paper menus, order status updates, and two-way table requests.
 
