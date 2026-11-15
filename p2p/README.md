@@ -26,7 +26,9 @@ Because the underlying Rust mesh protocol (`auranet-proto`) is lightweight, hard
 * **Autonomous Greenhouse & Garden Telemetry:** Equipping the solar relay with soil moisture, frost, or temperature sensors to send calm, daily status summaries straight to a kitchen E-Paper pager.
 * **Wildlife & Environmental Monitoring:** Deploying solar sensor nodes deep in forests or wetlands for non-intrusive acoustic or climate monitoring, relaying findings to researchers at basecamp.
 
-#### 🎨 Culture, Community & "Quiet Tech"
-* **Interactive Art & Urban Scavenger Hunts:** Location-aware storytelling and city games where clues automatically unlock on a player's E-Paper display based on proximity (`RSSI`) to hidden solar relays.
+#### 🎨 Culture, Community, Sports & "Quiet Tech"
+* **Interactive Geocaching & Urban Scavenger Hunts:** Location-aware storytelling and outdoor treasure hunts where hidden solar relays act as autonomous caches—automatically unlocking new riddles or clues on a player's E-Paper display based on proximity (`RSSI`) and logging visits via two-way `ACK`.
+* **Trail Checkpoints & Endurance Sports (e.g., Swedish Trekking Routes):** Rugged, off-grid checkpoint beacons along remote hiking trails, orienteering courses, or ultramarathons—allowing hikers and runners to log pass-throughs, receive weather or route alerts, and trigger emergency pings without cellular coverage.
 * **Hyper-Local Kiez Bulletin Boards:** A distraction-free, zero-tracking community network for sharing tools, surplus food, or local meetups within a neighborhood block.
-* **Sustainable, Repairable Venue Pagers:** A long-lasting, open-source alternative to disposable restaurant/foodtruck buzzers—featuring readable E-Paper menus, order status updates, and two-way table requests.
+* **Sustainable, Repairable Venue Pagers:** A long-lasting, open-source alternative to disposable restaurant or foodtruck buzzers—featuring readable E-Paper menus, order status updates, and two-way table requests.
+
