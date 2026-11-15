@@ -2,4 +2,4 @@
 
 Use case later in the project as LoraWan Gateway
 
-### coming in may 2027 ###
+# coming in may 2027 #
