@@ -66,6 +66,7 @@ SECTIONS {
 ```
 
 ### Cargo.toml ###
+```
 [package]
 name = "pico-blink"
 version = "0.1.0"
@@ -77,8 +78,10 @@ cortex-m-rt = "0.7.3"
 embedded-hal = "1.0.0"
 panic-halt = "1.0.0"
 rp235x-hal = { version = "0.3.0", features = ["rt", "critical-section-impl", "binary-info"] }
+```
 
 ### main.rs ###
+```
 #![no_std]
 #![no_main]
 
@@ -87,7 +90,7 @@ use embedded_hal::digital::OutputPin;
 use panic_halt as _;
 use rp235x_hal as hal;
 
-// Der zwingend erforderliche Boot-Block für den RP2350
+// Importend for the RP2350 Kernel
 #[link_section = ".start_block"]
 #[used]
 pub static IMAGE_DEF: hal::block::ImageDef = hal::block::ImageDef::secure_exe();
@@ -133,8 +136,10 @@ fn main() -> ! {
         timer.delay_ms(500);
     }
 }
+```
 
 ### biuld.rs ###
+```
 use std::env;
 use std::fs::File;
 use std::io::Write;
@@ -149,6 +154,7 @@ fn main() {
     println!("cargo:rustc-link-search={}", out.display());
     println!("cargo:rerun-if-changed=memory.x");
 }
+```
 
 ### Building and transfering the code on the Pico ###
 
