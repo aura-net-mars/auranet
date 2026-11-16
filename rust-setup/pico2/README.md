@@ -9,7 +9,7 @@ After installing Rust on your Dev Computer, you need the matching toolchain for 
 ```rustup target add thumbv8m.main-none-eabihf```
 
 ### Creating a Test Project ###
-We are using ```rp-hal``` ekosystem as an abtraction layer for the RP2350 to create a 
+We are using ```rp-hal``` ekosystem as an abtraction layer for the RP2350 to create a blinking LED program
 
 ```
 cargo new pico-blink --bin
