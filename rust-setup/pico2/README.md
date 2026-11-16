@@ -16,6 +16,16 @@ cargo new pico-blink --bin
 cd pico-blink
 ```
 
+```
+pico-blink/
+├── .cargo/
+│   └── config.toml   
+│   └── main.rs      
+├── build.rs          
+├── Cargo.toml         
+└── memory.x
+```
+
 ### Creating some files ###
 ```
 mkdir .cargo
@@ -54,6 +64,91 @@ SECTIONS {
   } > FLASH
 } INSERT AFTER .vector_table;
 ```
+
+### Cargo.toml ###
+[package]
+name = "pico-blink"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cortex-m = "0.7.7"
+cortex-m-rt = "0.7.3"
+embedded-hal = "1.0.0"
+panic-halt = "1.0.0"
+rp235x-hal = { version = "0.3.0", features = ["rt", "critical-section-impl", "binary-info"] }
+
+### main.rs ###
+#![no_std]
+#![no_main]
+
+use embedded_hal::delay::DelayNs;
+use embedded_hal::digital::OutputPin;
+use panic_halt as _;
+use rp235x_hal as hal;
+
+// Der zwingend erforderliche Boot-Block für den RP2350
+#[link_section = ".start_block"]
+#[used]
+pub static IMAGE_DEF: hal::block::ImageDef = hal::block::ImageDef::secure_exe();
+
+#[hal::entry]
+fn main() -> ! {
+    // Hardware-Register übernehmen (wie in C die Basis-Adressen)
+    let mut pac = hal::pac::Peripherals::take().unwrap();
+    let mut watchdog = hal::Watchdog::new(pac.WATCHDOG);
+
+    // Taktgeber (Clocks) mit 12 MHz externem Quarz starten
+    let clocks = hal::clocks::init_clocks_and_plls(
+        12_000_000u32,
+        pac.XOSC,
+        pac.CLOCKS,
+        pac.PLL_SYS,
+        pac.PLL_USB,
+        &mut pac.RESETS,
+        &mut watchdog,
+    )
+    .unwrap();
+
+    // Timer für die Pause (Delay) einrichten
+    let mut timer = hal::Timer::new_timer0(pac.TIMER0, &mut pac.RESETS, &clocks);
+
+    // GPIO-Pins freischalten
+    let sio = hal::Sio::new(pac.SIO);
+    let pins = hal::gpio::Pins::new(
+        pac.IO_BANK0,
+        pac.PADS_BANK0,
+        sio.gpio_bank0,
+        &mut pac.RESETS,
+    );
+
+    // Onboard-LED (GPIO 25) als Ausgang konfigurieren
+    let mut led_pin = pins.gpio25.into_push_pull_output();
+
+    // Endlosschleife (entspricht while(1) in C)
+    loop {
+        led_pin.set_high().unwrap();
+        timer.delay_ms(500);
+        led_pin.set_low().unwrap();
+        timer.delay_ms(500);
+    }
+}
+
+### biuld.rs ###
+use std::env;
+use std::fs::File;
+use std::io::Write;
+use std::path::PathBuf;
+
+fn main() {
+    let out = &PathBuf::from(env::var_os("OUT_DIR").unwrap());
+    File::create(out.join("memory.x"))
+        .unwrap()
+        .write_all(include_bytes!("memory.x"))
+        .unwrap();
+    println!("cargo:rustc-link-search={}", out.display());
+    println!("cargo:rerun-if-changed=memory.x");
+}
 
 ### Building and transfering the code on the Pico ###
 
